@@ -1,25 +1,37 @@
 #First code from class
 print("Hello, world)
 
+###################################
+
 #Adding on and asking user for name
 name  = input("What is your name? ")
 print("hello, {name}")
 
+###################################
+
 #result is not working, returning {name}, not what the user is inputting
 name = input("What is your name? ")
 print("Hello, " + name)
+
+###################################
 
 #Using the other parameters of print funtion, specifically end parameter
 name = input("What is your name? ")
 print("Hello, ", end"")
 print(name)
 
+###################################
+
 #Using quotes using single ' or \ 
 print('hello, "friend"')
+
+###################################
 
 #New Python features (f string, format string)
 name = input("What is your name? ")
 print(f"Hello, {name})
+
+###################################
 
 #Adding captilize and remove whitespace
 #Ask user their name
@@ -31,6 +43,8 @@ name = name.title()
 #print hello to user with name
 print(f"Hello, {name}")
 
+###################################
+
 #Adding captilize and remove whitespace combined into one line
 #Ask user their name
 name = input("What is your name? ")
@@ -39,11 +53,23 @@ name = name.strip().title()
 #print hello to user with name
 print(f"Hello, {name}")
 
+###################################
+
 #Adding captilize and remove whitespace combined into one line at the start of the program
 #Ask user their name
 name = input("What is your name? ").strip().title()
+
 #print hello to user with name
 print(f"Hello, {name}")
 
+###################################
 
+#Split users name into first and last name
+name = input("What is your name? ").strip().title()
+first, last = name.split(" ")
+
+#Returns just first name even if first and last is entered
+print(f"Hello, {first}")
+
+###################################
 
