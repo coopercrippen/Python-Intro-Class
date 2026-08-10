@@ -51,4 +51,24 @@ name = input("What is your name? ")
 hello(name)
 
 ##################################
+#cleaner way to use functions & not order things in the way that you want
+def main():
+    name = input("What is your name? ")
+    hello(name)
 
+def hello(to="world"):
+    print("hello,", to)
+
+main()
+
+##################################
+#calculator with functions
+def main():
+    x = int(input("What's x? "))
+    print("x squared is", square(x))
+
+def square(n):
+    return n * n
+
+
+main()
