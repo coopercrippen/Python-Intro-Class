@@ -1,0 +1,54 @@
+#Learning to use int/float and other numerical functions
+#Simple calc
+
+x = float(input("What's X? "))
+y = float(input("What's Y? "))
+
+print(x + y)
+
+##################################
+#Rounding
+
+x = float(input("What's X? "))
+y = float(input("What's Y? "))
+
+z = round(x + y)
+
+print(f"{z:,}")
+
+##################################
+#Rounding divided numbers
+x = float(input("What's X? "))
+y = float(input("What's Y? "))
+
+z = (x / y, 2)
+
+print(z)
+
+##################################
+#Specifiing the number of digits that we want to print with f string, .2f
+x = float(input("What's X? "))
+y = float(input("What's Y? "))
+
+print(f"{z:.2f}")
+
+##################################
+#Making our own functions, to say hello
+def hello():
+  print("hello")
+
+name = input("What is your name?")
+hello()
+print(name)
+
+##################################
+#making it function better
+
+def hello(to):
+  print("hello,", to)
+
+name = input("What is your name? ")
+hello(name)
+
+##################################
+
