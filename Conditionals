@@ -1,0 +1,155 @@
+#Conditionals Class
+#For example: >, >=, <, <=, ==, !=
+##################################
+
+
+#comparison
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+
+if x < y:
+  print("x is less than y")
+if x > y:
+  print("x is greater than y")
+if x == y:
+  print("x is equal to y")
+
+##################################
+#improving the efficiency
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+
+if x < y:
+  print("x is less than y")
+elif x > y:
+  print("x is greater than y")
+elif x == y:
+  print("x is equal to y")
+
+##################################
+#improving the efficiency even more
+#down to 2 questions from 3
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+
+if x < y:
+  print("x is less than y")
+elif x > y:
+  print("x is greater than y")
+else:
+  print("x is equal to y")
+
+
+##################################
+#using or 
+
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+
+if x < y or x > y:
+  print("x is not equal to y")
+else:
+  print("x is equal to y")
+
+
+##################################
+#making it simpler with same result
+
+x = int(input("What's x? "))
+y = int(input("What's y? "))
+
+if x != y
+  print("x is not equal to y")
+else:
+  print("x is equal to y")
+
+
+##################################
+#using if, elif & else
+score = int(input("Score: "))
+
+if score >= 90:
+  Print("A)
+elif score >= 80:
+  Print("B")
+elif score >= 70:
+  Print("C")
+elif score >= 60:
+  Print("D")
+else:
+  Print("F")
+
+
+##################################
+#even or odd
+
+x = int(input("What's x? "))
+
+if x % 2 == 0
+  print("Even")
+else:
+  print("Odd")
+
+
+##################################
+
+def main()
+x = int(input("What's x? ")
+  if is_even(x):
+    print("Even")
+  else:
+    print("Odd")
+
+def is_even(n):
+  if n % 2 == 0
+    return True
+  else:
+    return False
+
+
+main()
+
+
+##################################
+#making the same code more condensed as we have been
+def main()
+x = int(input("What's x? ")
+  if is_even(x):
+    print("Even")
+  else:
+    print("Odd")
+
+def is_even(n):
+  return True if n % 2 == 0 else False
+
+
+main()
+
+
+##################################
+#even more so
+def main()
+x = int(input("What's x? ")
+  if is_even(x):
+    print("Even")
+  else:
+    print("Odd")
+
+def is_even(n):
+  return n % 2 == 0
+
+
+main()
+
+##################################
+#using match
+
+name = input("What's your name? ")
+
+match name:
+  case "Harry" | "Hermione" | "Ron":
+    print("Gryf")
+  case "Draco":
+    print("Slyth")
+  case _:
+    print("Who?")
