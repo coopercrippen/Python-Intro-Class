@@ -1,0 +1,60 @@
+#Conditionals Shorts
+######################################
+def main()
+  difficulty = input("Do you like easy or hard games? Please enter E or H: ")
+  players = input("Do you like to play alone or with others? Please enter A or O: ")
+  
+  if difficulty == "H": 
+    if players == "O":
+      recommend("Poker")
+    elif players == "A":
+      recommend("Chess")
+    else:
+      print("Enter a valid number of players")
+  elif difficulty == "E":
+    if player == "O":
+      recommend("Hearts")
+    elif players == "A":
+      recommend("Clock")
+  else:
+    print("Enter a valid difficulty")
+
+def recommend(game):
+  print("You might like," game)
+
+main()
+
+
+#####################################
+#Boolean Expressions
+
+def main()
+  difficulty = input("Do you like easy or hard games? Please enter E or H: ")
+  if not (difficulty == "E" or diffculty == "H"):
+    print("Enter a valid difficulty")
+    return
+
+  players = input("Do you like to play alone or with others? Please enter A or O: ")
+  if not (players == "A" or players == "O"):
+    print("Enter a valid number of players")
+    return
+
+  if difficulty == "H": 
+    if players == "O":
+      recommend("Poker")
+    elif players == "A":
+      recommend("Chess")
+    
+      print("Enter a valid number of players")
+  elif difficulty == "E":
+    if player == "O":
+      recommend("Hearts")
+    elif players == "A":
+      recommend("Clock")
+  else:
+    print("Enter a valid difficulty")
+
+def recommend(game):
+  print("You might like," game)
+
+main()
