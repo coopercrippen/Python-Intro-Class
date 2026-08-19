@@ -1,0 +1,15 @@
+#Create Deep.py which makes 42 say yes and anything else say no
+
+def main():
+  def universe(answer):
+    if answer == "forty-two" or answer == "forty two" or answer == "42":
+      return("Yes.")
+    else:
+      return("No.")
+
+  answer = input("What is the answer to the universe? ")
+  cleaned = answer.strip().lower()
+  result = universe(cleaned)
+  print(result)
+
+main()
