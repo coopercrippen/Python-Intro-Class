@@ -1,0 +1,12 @@
+#Ask for greeting, hello output $0, h start but not hello output $20, else output $100
+
+def main()
+  def money()
+  if greeting == "Hello"
+    print("$0")
+  elif greeting == "h
+    print("$20")
+  else:
+    print("$100")
+
+  greeting
