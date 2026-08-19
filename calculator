@@ -1,0 +1,19 @@
+def main():
+  x, operator, y = input("Expression: ").split(" ")
+  x = float(x)
+  y = float(y)
+  print(f"{calculate(x, operator, y):.1f}")
+
+def calculate(x, operator, y):
+  if operator == "+":
+    return x + y
+  elif operator == "-":
+      return x - y
+  elif operator == "/":
+      return x / y
+  elif operator == "*":
+      return x * y
+  else:
+    return("Please enter a valid expression")
+
+main()
