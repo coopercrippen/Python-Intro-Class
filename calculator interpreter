@@ -1,0 +1,15 @@
+#Create program that prompts use for an arithmetic expression and then calculates the output
+
+def main()
+  def calculator()
+  if expression != int()
+    return("Please enter math expression")
+
+
+
+expression = input("Expression: ")
+result = calculator(expression)
+print(result)
+
+
+def main()
