@@ -1,1 +1,41 @@
-#
+#Using loops in Python CS50
+###########################
+
+#Getting a function to repeat itself
+print("meow")
+print("meow")
+print("meow")
+
+###########################
+#using while, this will endlessly print meow. Can use control-c to end endless loop
+
+i = 3
+while i != 0:
+  print("meow")
+  
+###########################
+
+i = 3
+while i != 0:
+  print("meow")
+  i = i - 1
+
+###########################
+#counting up instead of down
+i = 0
+  while i < 3:
+  print("meow")
+  # i = i +1 is the exact same statment below
+  i += 1
+
+###########################
+#for and lists
+
+for i in [0, 1, 2]:
+  print("meow")
+
+###########################
+
+for i in range(3):
+  print("meow")
+
