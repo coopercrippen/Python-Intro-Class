@@ -1,0 +1,18 @@
+#trying to build a soccer 'shooting on goal simulator
+def where_to_shoot():
+    #give the user choices
+    shooting_locations = ["Top-left, Top-right, Bottom-left, Bottom-right, Center"]
+    #print the choices
+    #index is the [] & item is the things in the list. Enumerate iterates the index while keeping the counter of the current item in the index.
+    for index, item in enumerate(shooting_locations, start=1):
+        print("You're through on goal, where would you like to shoot? ")
+        print(f"{index}.{item}")
+
+#getting the users choice
+while True:
+    shot_input = input(f"You're through on goal, where would you like to shoot? (1-{len(shooting_locations)}):")
+
+  
+
+if __name__ == "__where_to_shoot__":
+where_to_shoot()
