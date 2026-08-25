@@ -1,1 +1,118 @@
-#
+#####################################
+#meow with no space
+print("meow" * 3)
+
+#####################################
+print("meow\n" * 3, end="")
+
+#####################################
+#checking for negative, better to use a loop
+n = int(input("What's n? "))
+if n < 0:
+  n = int(input("What's n? "))
+  if n < 0:
+    n = int(input())
+
+#####################################
+#Using a loop
+while True:
+  n = int(input("What's n? "))
+  if n < 0:
+    continue
+  else:
+    break
+
+#####################################
+#tightening it up
+while True:
+  n = int(input("What's n? "))
+  if n > 0:
+    break
+
+for _ in range(n):
+  print("meow")
+
+#####################################
+
+def main():
+  number = get_number()
+  meow(number)
+
+def get_number()
+  while True:
+  n = int(input("What's n? "))
+    if n > 0
+      break
+  return n
+
+def meow(n):
+  for _ in range(n):
+    print("meow")
+
+main()
+
+#####################################
+#lists
+#Have to be specific when printing from lists in python
+students = ["Harry", "Ron", "Hermione"]
+print(students[0])
+print(students[1])
+print(students[2])
+
+#####################################
+students = ["Harry", "Ron", "Hermione"]
+
+for students in students:
+  print(students)
+
+#####################################
+#len
+students = ["Harry", "Ron", "Hermione"]
+
+for i in range(len(students)):
+  print(i + 1, students[i])
+
+#####################################
+#can use dict to replace below
+#students = ["Harry", "Ron", "Hermione", "Draco"]
+#houses = ["Gryffindor", "Gryffindor", "Gryffindor", "Slytherin"]
+students = {
+  "Harry: Gryffindor",
+  "Ron: Gryffindor",
+  "Hermione: Gryffindor",
+  "Draco: Slytherine"
+}
+#will print the students houses
+print(students["Harry"])
+print(students["Hermione"])
+print(students["Ron"])
+print(students["Draco"])
+
+#####################################
+
+students = {
+  "Harry: Gryffindor",
+  "Ron: Gryffindor",
+  "Hermione: Gryffindor",
+  "Draco: Slytherine"
+}
+
+for student in students:
+  print(student, students[student], sep=", ")
+
+#####################################
+#more than 2 items in dict
+students = [
+  {"name:" "Hermione", "house": Gryffindor", "patronus": "Otter"}
+  {"name:" "Harry", "house": Gryffindor", "patronus": "Stag"}
+  {"name:" "Ron", "house": Gryffindor", "patronus": "Jack Russel"}
+  {"name:" "Draco", "house": Slytherin", "patronus": None}
+]
+
+for student in students:
+  print(student["name"], student["house"], student["patronus"], sep=", ")
+
+#####################################
+
+
+
