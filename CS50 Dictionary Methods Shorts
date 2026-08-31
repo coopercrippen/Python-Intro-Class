@@ -1,6 +1,6 @@
 #Dictionary methods
 
-WORDS = {"PAIR": 4, "HAIR": 4, "CHAIR": 5}
+WORDS = {"PAIR": 4, "HAIR": 4, "CHAIR": 5, "GRAPHIC: 7"}
 
 def main():
   print("Welcome to the spelling bee!")
@@ -10,4 +10,30 @@ while len(WORDS) > 0:
   print(f"{len(WORDS)} words left!")
   guess = input("Guess a word: ")
 
+  if guess == "GRAPHIC":
+    #clear dictionary entirely
+    WORDS.clear()
+    print("You've won!")
+    
+  if guess in WORDS.key():
+    #removes words from dictionary
+    points = WORDS.pop(guess)
+    print(f"Good job! You scored {WORDS[guess]} points.")
+
 print("That's the game!")
+
+main()
+
+############################################
+
+WORDS = {"PAIR": 4, "HAIR": 4, "CHAIR": 5, "GRAPHIC: 7"}
+
+def main():
+  print("Welcome to the spelling bee!")
+  #setting the key & values using word & point
+  for word, points in WORD.items():
+    print(f'{word} was worth {points} points."})
+
+
+
+main()
