@@ -1,0 +1,25 @@
+#breaks down text into each word and gives the number of times it appears
+
+def main():
+  counts = {}
+  words = get_words("address.txt")
+  lowercase_words = [word.lower() for word in words if len(word) > 4]
+
+  for words in lowercase_words:
+    if word in counts:
+      counts[word] += 1
+    else:
+      counts[words] = 1
+
+  save_counts(counts)
+
+
+###############
+#can be shortened down a lot
+
+def main():
+  words = get_words("address.txt")
+  lowercase_words = [word.lower() for word in words if len(word) > 4]
+  counts = {word: lowercase_words.count(word) for word in words}
+  save_counts(counts)
+      
