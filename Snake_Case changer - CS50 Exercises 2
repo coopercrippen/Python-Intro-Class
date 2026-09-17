@@ -1,0 +1,23 @@
+def main():
+
+    #allowing user to input the camelcase, currently has no failsafe is there is no camelcase input
+    camel_case = input("camelCase: ")
+      
+    #making a list
+    snake_case = []
+
+    
+    for char in camel_case:
+        #finding the upper case characters with char.isupper
+        if char.isupper():
+            #adding to snake_case list while adding "_" and lower case characters
+            snake_case.append("_" + char.lower())
+        #otherwise the input is just added to the list (probably should adding something to make sure you enter something camelcase)
+        else:
+            snake_case.append(char)
+
+    final_snake_case = "".join(snake_case)
+    print(final_snake_case)
+
+if __name__ == "__main__":
+    main()
