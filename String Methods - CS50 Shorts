@@ -1,0 +1,5 @@
+#some notes about string methods
+# ex. print(show.capitalize()) only capitalizes first letter in string, not each word
+# .title will capitalize every word
+# .strip will remove whitespace
+# can be combined eg. print(show.strip().title())
