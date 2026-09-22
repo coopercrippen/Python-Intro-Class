@@ -1,0 +1,22 @@
+#making a vending machine that asks for 50 cents
+#stores what is put into the machine until 50 cents is reached, then gives drink and appropriate change
+
+def main():
+
+    total = 0
+    coins_entered = []
+
+    while total < 50:
+        coins_entered.append(int(input("Insert Coin: ")))
+        total = sum(coins_entered)
+        amount_due = (50 - total)
+        print(f"Total Paid: {total}")
+        print(f"Amount Due: {amount_due}")
+    else:
+        change_owed = (total - 50)
+        print(f"Change Owed: {change_owed}")
+        print("Enjoy your drink!")
+
+
+if __name__ == "__main__":
+    main()
