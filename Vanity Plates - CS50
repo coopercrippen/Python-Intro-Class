@@ -1,0 +1,28 @@
+#determines if an input fits vanity plate criteria
+
+def main():
+    plate = input("Plate: ")
+    if is_valid(plate):
+        print("Valid")
+    else:
+        print("Invalid")
+
+
+def is_valid(s):
+    if not s.isalnum():
+        return False
+    if len(s) > 6  :
+        return False
+    if len(s) <= 2  :
+        return False
+    if not s.isdigit():
+        return False
+
+
+    else:
+        return True
+
+
+
+if __name__ == "__main__":
+    main()
