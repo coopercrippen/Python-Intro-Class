@@ -1,0 +1,18 @@
+#program for removing the vowels from a user input
+def main():
+
+    words = []
+    vowels = ["a","e","i","o","u"]
+
+    while True:
+        user_input = (input("Write something: ").lower())
+
+        wrds = "".join(char for char in user_input if char not in vowels)
+        
+        print(f"twttr output: {wrds}")
+        words.append(wrds)
+        print("Please type end to finish your session")
+
+
+if __name__ == "__main__":
+    main()
