@@ -1,0 +1,30 @@
+#make a program that turns a fraction into a percent
+
+#make a program that makes a fraction into a percent
+
+def main():
+
+    while True:
+        user_input = input("Fraction: ").split("/")
+        try:
+            numerator = float(user_input[0])
+            denominator = float(user_input[1])
+
+            if denominator == 0:
+                raise ZeroDivisionError
+
+            if numerator > denominator:
+                raise ValueError
+
+        except(ZeroDivisionError, ValueError):
+            print("Invalid Input, please only use numbers.")
+            continue
+
+        percent = round((numerator / denominator *100),2)
+        print(f"{percent}" + "%")
+        break
+
+
+
+if __name__ == "__main__":
+    main()
