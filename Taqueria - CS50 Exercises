@@ -1,0 +1,38 @@
+#make a person order things off the menu until they are done
+
+def main():
+    menu = {
+        "Baja Taco": 4.25,
+        "Burrito": 7.50,
+        "Bowl": 8.50,
+        "Nachos": 11.00,
+        "Quesadilla": 8.50,
+        "Super Burrito": 8.50,
+        "Super Quesadilla": 9.50,
+        "Taco": 3.00,
+        "Tortilla Salad": 8.00
+    }
+
+    order_total = []
+
+    while True:
+        customer_order = input("Please type any dish that you would like to order. If you would like to see a menu, please type menu. Type end to check out.").strip().title()
+
+        if customer_order == "Menu":
+            print(menu)
+
+        elif customer_order == "End":
+            break
+
+        elif customer_order in menu:
+            order_total.append(menu[customer_order])
+            print(f"{customer_order} added. Total so far: ${sum(order_total):.2f}")
+
+        else:
+            print("Please order something else.")
+    print(f"Final total: ${sum(order_total):.2f}")
+
+
+
+if __name__ == "__main__":
+    main()
